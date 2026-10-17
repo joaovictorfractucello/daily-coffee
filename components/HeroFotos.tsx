@@ -55,6 +55,7 @@ export function HeroFotos({ slides }: { slides: Slide[] }) {
           aria-hidden={indice !== ativo}
           fill
           sizes={slide.sizes}
+          unoptimized
           loading={indice === 0 ? "eager" : undefined}
           fetchPriority={indice === 0 ? "high" : undefined}
           className="object-cover object-center transition-opacity duration-[1400ms] ease-in-out motion-reduce:transition-none"
