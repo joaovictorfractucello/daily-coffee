@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 
 type Slide = { src: string; alt: string; sizes: string; cta: { fundo: string; texto: string } };
 
-const INTERVALO_MS = 6000;
+const INTERVALO_MS = 5000;
 
 // Fotos empilhadas que se alternam com fade (só opacidade). Sem movimento reduzido, passa a cada
-// 6s e pausa com a aba escondida. Com movimento reduzido, fica na primeira foto.
+// 5s e pausa com a aba escondida. Com movimento reduzido, fica na primeira foto.
 // A cada troca, também muda a cor do botão principal do hero e a do botão do cabeçalho enquanto ele
 // está transparente (variáveis --cta-fundo e --cta-texto, só na seção #inicio e no <header>: mudar
 // a variável na raiz da página refaria o estilo de tudo, o que pesa na rolagem do celular).
